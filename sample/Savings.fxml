@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="357.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Savings">
+   <children>
+      <AnchorPane prefHeight="357.0" prefWidth="600.0" style="-fx-background-color: #0cbfda;">
+         <children>
+            <Label layoutX="119.0" layoutY="78.0" text="Name :" textFill="#e708eb">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="110.0" text="Initial Amount :" textFill="#df00ff">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="145.0" text="Max Withdraw Limit :" textFill="#e708eb">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="224.0" layoutY="75.0" prefHeight="25.0" prefWidth="158.0" promptText="Enter your name" />
+            <TextField fx:id="initialAmount" layoutX="224.0" layoutY="108.0" prefHeight="25.0" prefWidth="158.0" promptText="Type your initial money" />
+            <TextField fx:id="maxWithLimit" layoutX="224.0" layoutY="142.0" prefHeight="25.0" prefWidth="158.0" promptText="Max limit to withdraw" />
+            <Button layoutX="448.0" layoutY="73.0" mnemonicParsing="false" onAction="#CancleButton" prefHeight="30.0" prefWidth="61.0" text="Cancel" textFill="#e40505">
+               <font>
+                  <Font name="Candara Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="448.0" layoutY="140.0" mnemonicParsing="false" onAction="#EnterButton" prefHeight="30.0" prefWidth="61.0" text="Enter" textFill="#0f9408">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="452.0" layoutY="249.0" mnemonicParsing="false" onAction="#DoneButton" text="Done" textFill="BLUE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="54.0" layoutY="254.0" text="Account number :" textFill="#e708eb">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="accNumber" layoutX="224.0" layoutY="251.0" prefHeight="25.0" prefWidth="158.0" promptText="Generated account number" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

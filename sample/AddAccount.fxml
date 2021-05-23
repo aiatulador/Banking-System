@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="302.0" prefWidth="559.0" style="-fx-background-color: #0cbfda;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddAccount">
+   <children>
+      <AnchorPane layoutX="131.0" layoutY="32.0" prefHeight="270.0" prefWidth="378.0">
+         <children>
+            <Button layoutX="104.0" layoutY="74.0" mnemonicParsing="false" onAction="#CurrentButton" text="Current Account" textFill="#18e11f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="135.0" layoutY="135.0" mnemonicParsing="false" onAction="#BackButton" text="Back" textFill="#ff0b0b">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <effect>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Button>
+            <Button layoutX="102.0" layoutY="24.0" mnemonicParsing="false" onAction="#SavingButton" text="Savings Account" textFill="#a60a89">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

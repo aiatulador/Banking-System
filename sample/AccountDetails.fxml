@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="324.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AccountDetails">
+   <children>
+      <AnchorPane prefHeight="399.0" prefWidth="546.0" style="-fx-background-color: #0cbfda;">
+         <children>
+            <Label layoutX="89.0" layoutY="39.0" text="Account Number :" textFill="#5814f7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="accNumber" layoutX="234.0" layoutY="37.0" prefHeight="26.0" prefWidth="206.0" promptText="Please Type your account number" />
+            <Button layoutX="247.0" layoutY="83.0" mnemonicParsing="false" onAction="#EnterButton" text="Enter" textFill="#078d1b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="252.0" layoutY="355.0" mnemonicParsing="false" onAction="#ExitBotton" text="Exit" textFill="#fc0101">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="infoArea" layoutY="127.0" prefHeight="219.0" prefWidth="546.0" promptText="Bank of UAP" style="-fx-background-color: #0cbfda;">
+               <font>
+                  <Font name="Calibri Light Italic" size="19.0" />
+               </font></TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
